@@ -1,6 +1,6 @@
-# rest-jwt-permission sample project
+# boxme-jwt-permission sample project
 
-[Django Rest JWT Permission](https://github.com/chessbr/rest-jwt-permission) sample project.
+[BoxMe JWT Permission](https://bitbucket.com/boxmeteam/boxme-jwt-permission) sample project.
 
 The current sample project shows the usage through Django User Groups.
 
