@@ -17,7 +17,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'rest_framework',
+    'boxme_core',
     'rest_jwt_permission',   # Our guy
     'sample',
 ]
@@ -74,7 +74,7 @@ REST_FRAMEWORK = {
         'rest_jwt_permission.permissions.JWTAPIPermission',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'boxme_jwt.authentication.JSONWebTokenAuthentication',
     )
 }
 

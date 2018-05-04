@@ -1,6 +1,7 @@
 django>=1.10
-djangorestframework-jwt==1.11.0
-djangorestframework==3.6.4
+git+https://bitbucket.org/boxmeteam/boxme-jwt.git
+git+https://bitbucket.org/boxmeteam/boxme-core.git
 pyjwt==1.5.3
 pytz==2017.2
-git+https://github.com/chessbr/rest-jwt-permission@master#egg=rest-jwt-permission
+
+git+https://bitbucket.org/boxmeteam/boxme-jwt-permission.git

@@ -2,7 +2,7 @@
 from django import forms
 from django.contrib import admin
 
-from rest_jwt_permission.scopes import get_all_permission_providers_scopes
+from boxme_jwt_permission.scopes import get_all_permission_providers_scopes
 
 from .models import GroupScope
 

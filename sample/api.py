@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.contrib.auth.models import Group
-from rest_framework import decorators, response, routers, serializers, viewsets
+from boxme_core import decorators, response, routers, serializers, viewsets
 
 
 class GroupSerializer(serializers.ModelSerializer):

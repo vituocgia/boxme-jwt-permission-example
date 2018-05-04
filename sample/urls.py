@@ -2,7 +2,7 @@
 
 from django.conf.urls import url
 from django.contrib import admin
-from rest_framework_jwt.views import obtain_jwt_token
+from boxme_jwt.views import obtain_jwt_token
 
 from .api import router
 
