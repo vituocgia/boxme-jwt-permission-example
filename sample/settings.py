@@ -18,7 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'boxme_core',
-    'rest_jwt_permission',   # Our guy
+    'boxme_jwt_permission',   # Our guy
     'sample',
 ]
 
@@ -67,18 +67,18 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-##### !!! Custom settings !!!
+# !!! Custom settings !!!
 
-REST_FRAMEWORK = {
+BOXME_API = {
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_jwt_permission.permissions.JWTAPIPermission',
+        'boxme_jwt_permission.permissions.JWTAPIPermission',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'boxme_jwt.authentication.JSONWebTokenAuthentication',
     )
 }
 
-JWT_AUTH = {
+BOXME_JWT = {
     # Our handler to inject the scopes
     'JWT_PAYLOAD_HANDLER': 'sample.handlers.custom_jwt_payload_handler',
     'JWT_VERIFY_EXPIRATION': False
